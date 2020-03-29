@@ -1,0 +1,10 @@
+{
+  "name": "@koolm/ngx-form-builder",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "@ngx-formly/core": "^5.5.15",
+    "tslib": "^1.10.0"
+  }
+}
