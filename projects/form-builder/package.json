@@ -1,6 +1,9 @@
 {
   "name": "@koolm/ngx-form-builder",
-  "version": "0.0.1",
+  "description": "A form builder to produce dynamic forms with Formly",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": "github:JasonKoolman/ngx-form-builder",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
