@@ -2,6 +2,10 @@
 
 A form builder to produce dynamic forms with [Formly](https://formly.dev).
 
+![NPM version](https://img.shields.io/npm/v/@koolm/ngx-form-builder)
+![Package size](https://img.shields.io/bundlephobia/min/@koolm/ngx-form-builder)
+![Dependencies](https://img.shields.io/librariesio/release/npm/@koolm/ngx-form-builder)
+
 ## Features
 
 Writing forms can become quite complex and time-consuming. Formly is a dynamic (JSON powered) form library for Angular that brings unmatched maintainability to your application's forms. Form Builder is a lightweight wrapper on top of Formly, allowing for expressive code and type hinting using the power of method chaining. It eliminates boilerplate code and large JSON schema's. Furthermore, writing faulty Formly field configurations using Form Builder is near impossible, the compiler would beat you to it.
