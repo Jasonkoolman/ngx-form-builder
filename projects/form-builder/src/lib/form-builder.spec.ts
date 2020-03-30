@@ -78,6 +78,14 @@ describe('FormBuilder', () => {
     });
   });
 
+  it('should persist fields', () => {
+    builder.input('first');
+    builder.textarea('second');
+    builder.checkbox('third');
+
+    expect(builder.fields.length).toEqual(3);
+  });
+
   it('should create rich control', () => {
     const callback = () => {};
     const output = builder
