@@ -69,7 +69,7 @@ export class FormBuilder {
   /**
    * Create a new multicheckbox field.
    */
-  checkboxes(key: string, options?: Options | Observable<Options>): FormlyMultiCheckboxField {
+  checkboxes(key: string, options: Options | Observable<Options>): FormlyMultiCheckboxField {
     return this.addField(
       new FormlyMultiCheckboxField(key, options)
     );
