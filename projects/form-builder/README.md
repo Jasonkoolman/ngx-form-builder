@@ -1,6 +1,6 @@
 # Form Builder
 
-A form builder to produce dynamic forms with [Formly](https://formly-js.github.io/ngx-formly).
+A form builder to produce dynamic forms with [Formly](https://formly.dev).
 
 ## Features
 
@@ -10,6 +10,8 @@ Writing forms can become quite complex and time-consuming. Formly is a dynamic (
 - :heavy_check_mark: Expressive
 - :heavy_check_mark: Flexible
 - :heavy_check_mark: Type hinting
+
+Seeing is believing. Check out the [demo on Stackblitz](https://stackblitz.com/edit/ngx-form-builder-demo).
 
 ## Getting started
 
