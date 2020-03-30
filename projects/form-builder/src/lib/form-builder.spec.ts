@@ -1,4 +1,5 @@
 import { FormBuilder } from './form-builder';
+import { Validators } from '@angular/forms';
 
 const MOCK_OPTIONS = [
   { label: 'Yes', value: true },
@@ -82,5 +83,42 @@ describe('FormBuilder', () => {
     });
   });
 
+  it('should create rich control', () => {
+    const callback = () => {};
+    const output = builder
+      .input('email', 'email')
+      .label('Email')
+      .placeholder('Enter your email')
+      .description('Make sure to double check')
+      .default('test@example.com')
+      .required()
+      .validators({ validation: [Validators.email] })
+      .modelOptions({ updateOn: 'blur' })
+      .onInit(callback)
+      .onDestroy(callback)
+      .get();
+
+    expect(output).toEqual(jasmine.objectContaining({
+      key: 'email',
+      type: 'input',
+      templateOptions: {
+        type: 'email',
+        label: 'Email',
+        placeholder: 'Enter your email',
+        description: 'Make sure to double check',
+        required: true
+      },
+      defaultValue: 'test@example.com',
+      validators: {
+        validation: [Validators.email]
+      },
+      modelOptions: {
+        updateOn: 'blur'
+      }
+    }));
+
+    expect(typeof output.hooks.onInit).toMatch('function');
+    expect(typeof output.hooks.onDestroy).toMatch('function');
+  });
 
 });
