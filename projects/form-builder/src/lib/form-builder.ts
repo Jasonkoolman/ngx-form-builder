@@ -24,7 +24,7 @@ export class FormBuilder {
   /**
    * Create a new input field.
    */
-  input(key: string, type: InputType): FormlyInputField {
+  input(key: string, type: InputType = 'text'): FormlyInputField {
     return this.addField(
       new FormlyInputField(key, type)
     );
