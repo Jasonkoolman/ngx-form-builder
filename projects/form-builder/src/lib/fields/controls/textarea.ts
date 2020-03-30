@@ -1,6 +1,6 @@
-import { FormlyBaseField } from './base';
+import { AbstractFormlyControl } from './abstract-control';
 
-export class FormlyTextareaField extends FormlyBaseField {
+export class FormlyTextareaField extends AbstractFormlyControl {
 
   constructor(key: string, rows: number) {
     super(key);

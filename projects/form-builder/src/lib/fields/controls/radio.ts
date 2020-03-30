@@ -1,7 +1,7 @@
 import { FormlyTemplateOptions } from '@ngx-formly/core';
-import { FormlyBaseField } from './base';
+import { AbstractFormlyControl } from './abstract-control';
 
-export class FormlyRadioField extends FormlyBaseField {
+export class FormlyRadioField extends AbstractFormlyControl {
 
   constructor(key: string, options: FormlyTemplateOptions['options']) {
     super(key);

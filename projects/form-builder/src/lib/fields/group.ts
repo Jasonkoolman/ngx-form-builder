@@ -1,8 +1,8 @@
-import { FormlyBaseField } from './base';
+import { AbstractFormlyField } from './abstract-field';
 
-export class FormlyGroupField extends FormlyBaseField {
+export class FormlyGroupField extends AbstractFormlyField {
 
-  constructor(key: string, fields: FormlyBaseField[], className?: string) {
+  constructor(key: string, fields: AbstractFormlyField[], className?: string) {
     super(key);
 
     this.config.fieldGroup = fields.map(field => field.get());

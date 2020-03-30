@@ -2,16 +2,16 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 import { Observable } from 'rxjs';
 import { InputType } from './form-builder.interface';
 import {
-  FormlyBaseField,
+  AbstractFormlyField,
+  FormlyGroupField,
+  FormlyArrayField,
   FormlyInputField,
   FormlyTextareaField,
   FormlySelectField,
   FormlyRadioField,
   FormlyCheckboxField,
   FormlyMultiCheckboxField,
-  FormlyCustomField,
-  FormlyGroupField,
-  FormlyArrayField
+  FormlyCustomField
 } from './form-fields';
 
 type Closure = (builder: FormBuilder) => void;
@@ -19,7 +19,7 @@ type Options = { label: string, value: any, [prop: string]: any }[];
 
 export class FormBuilder {
 
-  fields: FormlyBaseField[] = [];
+  fields: AbstractFormlyField[] = [];
 
   /**
    * Create a new input field.
@@ -131,7 +131,7 @@ export class FormBuilder {
   /**
    * Add the given field to the stack.
    */
-  private addField<Field extends FormlyBaseField>(field: Field): Field {
+  private addField<Field extends AbstractFormlyField>(field: Field): Field {
     this.fields.push(field);
     return field;
   }

@@ -1,7 +1,7 @@
-import { FormlyBaseField } from './base';
-import { InputType } from '../form-builder.interface';
+import { AbstractFormlyControl } from './abstract-control';
+import { InputType } from '../../form-builder.interface';
 
-export class FormlyInputField extends FormlyBaseField {
+export class FormlyInputField extends AbstractFormlyControl {
 
   constructor(key: string, type: InputType = 'text') {
     super(key);

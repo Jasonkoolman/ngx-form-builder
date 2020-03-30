@@ -1,10 +1,12 @@
-export { FormlyBaseField } from './fields/base';
-export { FormlyInputField } from './fields/input';
-export { FormlyTextareaField } from './fields/textarea';
-export { FormlySelectField } from './fields/select';
-export { FormlyRadioField } from './fields/radio';
-export { FormlyCheckboxField } from './fields/checkbox';
-export { FormlyMultiCheckboxField } from './fields/multi-checkbox';
-export { FormlyCustomField } from './fields/custom';
-export { FormlyGroupField } from './fields/group';
-export { FormlyArrayField } from './fields/array';
+export * from './fields/abstract-field';
+export * from './fields/group';
+export * from './fields/array';
+
+export * from './fields/controls/abstract-control';
+export * from './fields/controls/input';
+export * from './fields/controls/textarea';
+export * from './fields/controls/select';
+export * from './fields/controls/radio';
+export * from './fields/controls/checkbox';
+export * from './fields/controls/multi-checkbox';
+export * from './fields/controls/custom';

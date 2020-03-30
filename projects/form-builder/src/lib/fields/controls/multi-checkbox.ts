@@ -1,7 +1,7 @@
 import { FormlyTemplateOptions } from '@ngx-formly/core';
-import { FormlyBaseField } from './base';
+import { AbstractFormlyControl } from './abstract-control';
 
-export class FormlyMultiCheckboxField extends FormlyBaseField {
+export class FormlyMultiCheckboxField extends AbstractFormlyControl {
 
   constructor(key: string, options: FormlyTemplateOptions['options']) {
     super(key);
