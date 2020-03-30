@@ -10,4 +10,13 @@ export class FormlySelectField extends FormlyBaseField {
     this.config.templateOptions.options = options;
   }
 
+  /**
+   * Set the placeholder.
+   */
+  placeholder(value: string) {
+    this.config.templateOptions.placeholder = value;
+
+    return this;
+  }
+
 }

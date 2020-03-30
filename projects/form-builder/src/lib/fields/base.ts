@@ -44,15 +44,6 @@ export class FormlyBaseField {
   }
 
   /**
-   * Set the placeholder.
-   */
-  placeholder(value: string) {
-    this.config.templateOptions.placeholder = value;
-
-    return this;
-  }
-
-  /**
    * Mark as required.
    */
   required(value = true) {

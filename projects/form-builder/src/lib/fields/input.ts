@@ -11,6 +11,15 @@ export class FormlyInputField extends FormlyBaseField {
   }
 
   /**
+   * Set the placeholder.
+   */
+  placeholder(value: string) {
+    this.config.templateOptions.placeholder = value;
+
+    return this;
+  }
+
+  /**
    * Set the minimum.
    */
   min(value: number) {

@@ -9,4 +9,13 @@ export class FormlyTextareaField extends FormlyBaseField {
     this.config.templateOptions.rows = rows;
   }
 
+  /**
+   * Set the placeholder.
+   */
+  placeholder(value: string) {
+    this.config.templateOptions.placeholder = value;
+
+    return this;
+  }
+
 }
