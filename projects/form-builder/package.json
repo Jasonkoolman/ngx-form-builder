@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": "github:JasonKoolman/ngx-form-builder",
   "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7",
-    "@ngx-formly/core": "^5.5.15",
-    "tslib": "^1.10.0"
+    "@angular/common": ">=8.0.0",
+    "@angular/core": "^>=8.0.0",
+    "@ngx-formly/core": ">=5.0.0",
+    "tslib": ">=1.0.0"
   }
 }
