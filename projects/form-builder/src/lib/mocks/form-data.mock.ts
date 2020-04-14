@@ -3,6 +3,16 @@ export const OPTIONS = [
   { label: 'No', value: false }
 ];
 
+export const FIELD = {
+  key: 'address',
+  fieldGroup: [],
+  fieldGroupClassName: 'address-field',
+  templateOptions: {
+    foo: 'bar'
+  },
+  wrappers: ['label']
+};
+
 export const CONTROL = {
   key: 'email',
   type: 'input',

@@ -86,6 +86,15 @@ describe('FormBuilder', () => {
     expect(builder.fields.length).toEqual(3);
   });
 
+  it('should create rich field', () => {
+    const output = builder.group('address', () => {}, 'address-field')
+      .compose({ foo: 'bar' })
+      .wrappers(['label'])
+      .get();
+
+    expect(output).toEqual(Mock.FIELD);
+  });
+
   it('should create rich control', () => {
     const callback = () => {};
     const output = builder
